@@ -74,7 +74,7 @@ _vibrate-horizontal() {
 //
 _bounce-scale(float, delay = 0) {
   suffix = _strip-unit(percentage(float));
-  keyframe-name = _bounce-scale- + suffix;
+  keyframe-name = _sanitize-animation-name(_bounce-scale- + suffix);
   animation: keyframe-name delay ease-out;
 
   @keyframes {keyframe-name} {
