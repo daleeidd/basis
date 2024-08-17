@@ -3,6 +3,6 @@
 // @return  string
 //
 _sanitize-animation-name(name) {
-  name = replace('[\.\(\)\,]', '-', name);
+  name = replace('[.,()#%]', '-', name);
   return name;
 }
